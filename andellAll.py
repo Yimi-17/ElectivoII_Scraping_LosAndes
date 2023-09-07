@@ -18,11 +18,11 @@ if response.status_code == 200:
     # Verifica que haya títulos y fechas disponibles
     if titles and dates:
         # Abre un archivo CSV para escribir
-        with open('losandes.csv', 'w', newline='', encoding='utf-8-sig') as csvfile:
+        with open('losandesnoticias2.csv', 'w', newline='', encoding='utf-8-sig') as csvfile:
             archivo = csv.writer(csvfile)
 
             # Escribe el encabezado del CSV
-            archivo.writerow(['TITULO', 'FECHA'])
+            archivo.writerow(['Titulos', 'Fechas'])
 
             # Itera a través de los títulos y fechas y escribe en el CSV
             for title, date in zip(titles, dates):
